@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<title>App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<style>
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  } 
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #df1e1e;
+  font-size: 12px;
+}
+
+.button1:hover {
+  background-color: #df1e1e;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ff9100;
+  font-size: 12px;
+}
+
+.button2:hover {
+  background-color: #ff9100;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #0de718;
+  font-size: 12px;
+}
+
+.button3:hover {
+  background-color: #0de718;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #006eff;
+  font-size: 12px;
+}
+
+.button4:hover {
+  background-color: #006eff;
+  color: white;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #c300ff;
+  font-size: 12px;
+}
+
+.button5:hover {
+  background-color: #c300ff;
+  color: white;
+}
+
+.button6 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff00aa;
+  font-size: 12px;
+}
+
+.button6:hover {
+  background-color: #ff00aa;
+  color: white;
+}
+
+.button7 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffee00;
+  font-size: 12px;
+}
+
+.button7:hover {
+  background-color: #ffee00;
+  color: white;
+}
+.button8 {
+  background-color:rgb(247, 247, 247);
+  color: black;
+  border: 2px solid #000000;
+  font-size: 12px;
+}
+
+.button8:hover {
+  background-color: white;
+  color: black;
+}
+
+.button9 {
+  background-color: white;
+  color:black;
+  border: 2px solid #fff799;
+  font-size: 12px;
+}
+
+.button9:hover {
+  background-color: #fff799;
+  color: white;
+}
+
+
+</style>
+<body>
+
+<div class="w3-container w3-card w3-center">
+  <h1>Smart belysning Helsingborg</h1>
+</div>
+
+<div class="w3-center">
+
+<h2>Färger</h2>
+<form>
+   <button class="button button1">Röd</button> 
+   <button class="button button2">Orange</button> 
+   <button class="button button3">Grön</button> 
+   <button class="button button4">Blå</button> 
+   <button class="button button5">Lila</button> 
+   <button class="button button6">Rosa</button>
+   <button class="button button7">Gul</button>
+   <button class="button button8">Vit</button>
+   <button class="button button9">Naturdjus</button>
+
+
+  <h2>Ljusstyrka</h2>
+  <input type="radio" id="låg" name="ljusstyrka" value="ljusstyrka" left="25%">
+  <label for="låg"left="25%">Låg</label>
+  <input type="radio" id="mellan" name="ljusstyrka" value="ljusstyrka" left="50%">
+  <label for="mellan">Mellan</label>
+  <input type="radio" id="hög" name="ljusstyrka" value="ljusstyrka" left="75%">
+  <label for="hög">Hög</label>
+<br>
+
+  <img src="lågljus.jpg" alt="Röd RGB" width="33%" height="33%" left="25%">
+  <img src="mellanljus.jpg" alt="Röd RGB" width="33%" height="33%" left="50%">
+  <img src="högljus.jpg" alt="Röd RGB" width="33%" height="33%" left="75%">
+
+  
+  <h2>Spridning av ljuset</h2>
+  <input type="radio" id="lågspridning" name="spridning" value="spridning">
+  <label for="lågspridning">Låg spridning</label><br>
+  <input type="radio" id="mellanpridning" name="spridning" value="spridning">
+  <label for="mellanspridning">Mellan spridning</label><br>
+  <input type="radio" id="högspridning" name="spridning" value="spridning">
+  <label for="högspridning">Hög spridning</label><br>
+ 
+  <h2>Avstånd bak</h2>
+  <input type="radio" id="1lyktstolpe" name="avstånsbak" value="avstånsbak">
+  <label for="1lyktstolpe">1 lyktstolpe</label><br>
+  <input type="radio" id="2lyktstolpar" name="avstånsbak" value="avstånsbak">
+  <label for="2lyktstolpar">2 lyktstolpar</label><br>
+
+  <h2>Avstånd fram</h2>
+  <input type="radio" id="1lyktstolpe" name="avstånsbak" value="avstånsfram">
+  <label for="1lyktstolpe">1 lyktstolpe</label><br>
+  <input type="radio" id="2lyktstolpar" name="avstånsbak" value="avstånsfram">
+  <label for="2lyktstolpar">2 lyktstolpar</label><br>
+
+
+</form>
+</div>
+
+  <table>
+   <tr>
+     <th>Plats</th>
+     <th>Gå till platsen:</th>
+    </tr>
+   <tr>
+     <td>Plats 1</td>
+      <td><button onclick="location.href = 'place1.html';" id="myButton" class="float-left submit-button" >Klicka här!</button> </td>
+   </tr>
+   <tr>
+      <td>Plats 2</td>
+      <td><button onclick="location.href = 'place2.html';" id="myButton" class="float-left submit-button" >Klicka här!</button> </td>
+    </tr>
+  </table>
+
+  <button onclick="location.href = 'place2.html';" id="myButton" class="float-left submit-button"  style="position:absolute; TOP: 1060px;px; LEFT: 300px;px; WIDTH:30px; HEIGHT:30px">Plats 2</button> </td>
+ 
+  <!--<button type="button" style="position:absolute; TOP:430px; LEFT:500px; WIDTH:30px; HEIGHT:30px"></button>-->
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89977.17791112755!2d12.66422053587226!3d56.02908161784899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1616500206420!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ 
+<div class="w3-container w3-card w3-center">
+    <h3>Välkommen till Helsingborg</h3>
+</div>
+
+</body>
